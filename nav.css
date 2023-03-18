@@ -35,3 +35,14 @@ nav a.active {
     color: black;
     background-color: #04AA6D;
 }
+
+@media only screen and (max-width: 800px) {
+	nav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 2px 4px;
+        text-decoration: none;
+        font-size: 11px;
+    }
+}

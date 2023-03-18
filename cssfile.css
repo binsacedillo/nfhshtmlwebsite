@@ -13,7 +13,7 @@ body {
 #visionmission {
 	position: absolute;
 	left: 1230px;
-	top: 865px;
+	top: 890px;
 	margin-right: 0px;
 	padding-right: 0px;
 }
@@ -39,12 +39,11 @@ p.historyy {
 	color: rgb(72, 244, 72);
 	text-align: center;
 	font-size: 1.3rem;
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 300px;
+	margin-right: 300px;
 }
 
 h1 {
-	color: rgb(0, 0, 0);
 	font-size: 50px;
 	text-align: center;
 }
@@ -53,8 +52,8 @@ p.mission {
 	color: black;
 	font-size: 1.6rem;
 	text-align: center;
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 300px;
+	margin-right: 300px;
 }
 
 p.vision {
@@ -75,7 +74,7 @@ footer {
 hr {
 	margin: 0px;
 	margin: 2px 0px 0px;
-	border: 2px solid white;
+	border: 2px solid rgb(72, 244, 72);
 }
 
 .imagebanner {
@@ -99,7 +98,7 @@ hr {
 	color: rgb(72, 244, 72);
 	position: absolute;
 	left: 1245px;
-	top: 1585px;
+	top: 1880px;
 	padding-top: 0;
 	font-size: 20px;
 	font-style: italic;
@@ -108,9 +107,40 @@ hr {
 	z-index: 30;
 }
 
+@media only screen and (max-width: 800px) {
+    .imagebanner {
+		position: relative;
+		bottom: 15px;
+		margin-top: 0;
+		height: 155px;
+		/* width: 1280px; */
+		width: 597px;
+	}
 
+	p.historyy {
+		color: rgb(72, 244, 72);
+		text-align: center;
+		font-size: 1.3rem;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
 
+	.copyright {
+		color: rgb(72, 244, 72);
+		position: absolute;
+		left: 370px;
+		top: 3450px;
+		padding-top: 0;
+		font-size: 15px;
+		font-style: italic;
+		font-weight: bold;
+		text-align: right;
+		z-index: 30;
+	}
 
-
-
+	h1 {
+		font-size: 30px;
+		text-align: center;
+	}
+}
 
