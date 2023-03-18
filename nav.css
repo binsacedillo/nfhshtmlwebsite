@@ -1,0 +1,30 @@
+html {
+    font-family: monospace;
+}
+
+nav {
+    position: relative;
+    bottom: 0px;
+    margin-right: 0;
+    padding-right: 0;
+    width: 1500px;
+    font-size: 25px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a.active {
+    color: white;
+}
