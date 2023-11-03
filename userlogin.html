@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="userlogin.css">
+    <title>School Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="deped.png" alt="school-logo1" class="school-logo">
+            <h1>WELCOME TO
+                <br>
+                NORTH FAIRVIEW HIGH SCHOOL</h1>
+            <img src="nfhs.png" alt="school-logo2" class="school-logo">
+        </header>
+
+        <div class="login-form">
+            <div class="input-field">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter username">
+            </div>
+            <div class="input-field">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="button-group">
+                <button onclick="authenticate()">Login</button>
+                <button onclick="location.href='signup.html'">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <script src="userlogin.js"></script>
+</body>
+
+</html>

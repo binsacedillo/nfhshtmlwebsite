@@ -1,0 +1,41 @@
+html {
+    background-color: black;
+    font-family: monospace;
+}
+
+h1.header {
+    color: #FF00DF;
+    font-size: 4rem;
+}
+
+h1 {
+    font-style: italic;
+}
+
+section {
+    font-size: 1.5rem;
+}
+
+.green {
+    color: green;
+    list-style: armenian;
+}
+
+.yellow {
+    color: yellow;
+    list-style: circle;
+}
+
+.shish {
+    color: #81918F;
+    list-style: decimal;
+}
+
+.dem {
+    color: #A6BA07;
+    list-style: disc;
+}
+
+.reddyname {
+    color: #FF3800;
+}

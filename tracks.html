@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html id="trackshtml" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/cssfile.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="script.js"></script>
+    <title>Tracks Offered</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/banner.png" alt="banner" class="imagebanner">
+    </header>
+    <nav id="trackssss">
+        <a class="active" href="welcome.html" target="_self">Home</a>
+        <a href="index.html" target="_self">History</a>
+        <a href="facilities.html" target="_self">Facilities</a>
+        <a href="depedvisionn.html" target="_self">Tracks Offered</a>
+        <a href="faculty.html" target="_self">Faculty</a>
+        <a href="depedvisionn.html" target="_self">Mission, Vision, Core Values</a>
+    </nav>
+    <header>
+        <h1 id="trackss">TRACKS OFFERED</h1>
+    </header>
+    <button id="show-info-button" onclick="showStrand()">SHOW THE AVAILABLE STRANDS</button>
+    <div id="strand-info" style="display: none;"></div>
+    <img id="footerimagees" src="images/footer.png" alt="Footer Image">
+    <body onload="showLoadingScreen()">
+        <div id="loadingScreen"
+            style="background-color: #000; width: 100%; height: 100vh; position: fixed; z-index: 999; top: 0; left: 0; display: none;">
+            <img src="images/school.png" alt="your-image-description" style="filter: blur(5px); width: 100%;">
+            <div id="loadingCircle"
+                style="width: 80px; height: 80px; border-radius: 50%; border: 7px solid #fff; border-top-color: #ebd065; position: absolute;">
+            </div>
+        </div>
+    </body>
+</body>
+</html>

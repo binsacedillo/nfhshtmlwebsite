@@ -1,0 +1,41 @@
+html {
+    background-image: url(background.jpg);
+    background-position: center;
+}
+
+table {
+    border: 5px solid rgb(247, 123, 123);
+    background-image: url(nfhs.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    left: 500px;
+    top: 100px;
+    width: 900px;
+    height: 600px;
+    margin-bottom: 20px;
+}
+
+td, th {
+    text-transform: capitalize;
+    border: 2px solid rgb(247, 123, 123);
+    font-size: 30px;
+    font-weight: 900;
+    color: blue;
+    text-align: center;
+}
+
+.sun {
+    color: yellow;
+}
+
+.year {
+    background-color: blue;
+    color: white;
+}
+
+.month {
+    background-color: red;
+    color: white;
+}

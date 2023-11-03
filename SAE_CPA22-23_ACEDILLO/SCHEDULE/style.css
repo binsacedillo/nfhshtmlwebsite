@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.sched {
+    display: inline-block;
+    margin: 0;
+    color: white;
+}
+
+.gold {
+    color: rgb(227, 231, 37);
+}
+
+.greeen {
+    color: rgb(140, 200, 88);
+}
+
+.bluuuuueee {
+    color: rgb(46, 206, 234);
+}
+
+.howdy {
+    color: rgb(249, 197, 182);
+}
+
+.cooly {
+    color: rgb(0, 255, 204);
+}
+
+.howdyhoo {
+    color: rgb(11, 163, 23);
+}
+
+.shish {
+    color: rgb(124, 86, 237);
+}
+
+.hooooohi {
+    color: rgb(216, 8, 25);
+}
+
+.hihihi {
+    color: black;
+}
+
+.woohoo {
+    color: rgb(99, 109, 1);
+}
+
+.siuuu {
+    color: rgb(252, 129,53);
+}

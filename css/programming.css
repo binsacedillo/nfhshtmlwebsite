@@ -1,0 +1,250 @@
+html {
+    background-color: black;
+    color: rgb(72, 244, 72);
+    /* background-image: url(school.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    font-family: monospace;
+}
+
+#programs {
+    position: relative;
+    left: 5px;
+}
+
+#footerimagess {
+    margin-top: 0;
+    margin-bottom: -20px;
+    padding-bottom: 0;
+    padding-top: 0;
+    width: 100%;
+    height: 15rem;
+    top: -0.1rem;
+    bottom: 6rem;
+    position: relative;
+    z-index: -9999;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.imagebannerr {
+    animation: fade-in 1s ease-out 0.5s forwards;
+    opacity: 0;
+    animation-delay: 4s;
+    padding: 0;
+    position: relative;
+    left: -7px;
+    bottom: 12px;
+    margin-top: 0;
+	height: 180px;
+	/* width: 1280px; */
+	width: 1525px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+	position: absolute;
+	left: 1250px;
+	top: 2165px;
+	padding-top: 0;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: right;
+	z-index: 30;
+}
+
+nav {
+    border-bottom: 1px solid rgb(72, 244, 72);
+    position: relative;
+    bottom: 205px;
+    margin-right: 0;
+    padding-right: 0;
+    left: -10px;
+    width: 1530px;
+    overflow: hidden;
+    background-color: black;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    background-color: #04AA6D;
+    color: white;
+}
+
+nav a.active {
+    background-color: #04AA6D;
+    color: black;
+}
+
+nav a {
+    transition: all 0.2s ease-in-out;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 65px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+hr {
+	margin: 80px -8px 0px;
+	border: 2px solid rgb(72, 244, 72);
+}
+
+
+#visionmission {
+	position: absolute;
+	left: 1250px;
+	top: 2010px;
+}
+
+.cplusplus img {
+    width: 300px;
+    height: 300px;
+    margin-left: 800px;
+}
+
+.python img {
+    width: 300px;
+    height: 300px;
+    margin-left: 800px;
+}
+
+.java img {
+    width: 320px;
+    height: 250px;
+    margin-left: 790px;
+}
+
+h3 {
+    border-radius: 3px;
+    border: 1px solid rgb(72, 244, 72);
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 350px;
+    font-size: 2rem;
+    /* color: white; */
+    background-color: rgba(182, 182, 182, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.logow {
+    position: absolute;
+    width: 90px;
+    left: 480px;
+    top: 255px;
+}
+
+#header {
+    position: relative;
+    left: 140px;
+    top: 40px;
+    text-align: center;
+    margin-left: 450px;
+    margin-right: 570px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    border: 1px solid rgb(72, 244, 72);
+    border-radius: 3px;
+    text-align: center;
+    /* color: white; */
+    font-size: 3rem;
+    margin-left: 720px;
+    margin-right: 680px;
+    background-color: rgba(182, 182, 182, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+#pythonhead {
+    font-size: 3rem;
+    margin-right: 650px;
+}
+
+
+/* CP SIZE */
+@media only screen and (max-width: 800px) {
+    .imagebanner {
+        width: 648px;
+    }
+}
+
+/* LAPTOP SIZE */
+@media only screen and (min-width: 1518px) {
+    .cplusplus img {
+        width: 200px;
+        height: 200px;
+        margin-left: 675px;
+    }
+    
+    .python img {
+        width: 230px;
+        height: 200px;
+        margin-left: 660px;
+    }
+    
+    .java img {
+        width: 370px;
+        height: 250px;
+        margin-left: 580px;
+    }
+}
+
+/* DESKTOP SIZE */
+@media only screen and (min-width: 1705px) {
+    .cplusplus img {
+        width: 300px;
+        height: 300px;
+        margin-left: 700px;
+    }
+    
+    .python img {
+        width: 300px;
+        height: 300px;
+        margin-left: 700px;
+    }
+    
+    .java img {
+        width: 300px;
+        height: 300px;
+        margin-left: 700px;
+    }
+
+    .imagebanner {
+        position: relative;
+        left: 0px;
+        margin-right: 0px;
+        bottom: 12px;
+        margin-top: 0;
+        height: 180px;
+        /* width: 1280px; */
+        width: 1679px;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    #visionmission {
+        position: absolute;
+        left: 1420px;
+        top: 2180px;
+    }
+}

@@ -1,0 +1,76 @@
+html {
+    font-family: monospace;
+}
+
+nav {
+    position: relative;
+    top: -20px;
+    bottom: 0px;
+    margin-right: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-top: 2px;
+    font-size: 25px;
+    overflow: hidden;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
+header img {
+    animation: fade-in 1s ease-out 0.5s forwards;
+    opacity: 0;
+    animation-delay: 4s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    text-decoration: none;
+    background-color: #f1ee9c;
+    color: black;
+}
+
+nav a {
+    transition: all 0.2s ease-in-out;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 20px 100px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#trackssss a {
+    transition: all 0.2s ease-in-out;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 20px 100px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a.active {
+    color: white;
+    background-color: #bdb93f;
+}
+/* 
+@media only screen and (max-width: 800px) {
+	nav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 2px 4px;
+        text-decoration: none;
+        font-size: 11px;
+    }
+} */

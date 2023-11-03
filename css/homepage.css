@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 1160px;
+}
+
+body {
+    background: linear-gradient(to bottom, #f0e5d0, #c9d9b8);
+    background: url(school.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ .logo-container {
+    padding-top: 5%;
+    padding-bottom: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .logo {
+     width: 150px;
+     height: auto;
+     margin: 0 10px;
+    transform-style: preserve-3d;
+        animation: spin 2s linear;
+        animation-delay: 3s;
+ }
+
+ @media (max-width: 600px) {
+     .logo {
+         width: 50px;
+         margin: 0 5px;
+     }
+ }
+
+ @keyframes spin {
+     0% {
+         transform: rotateY(0deg);
+     }
+
+     100% {
+         transform: rotateY(360deg);
+     }
+ }
+
+ h1 {
+     text-align: center;
+     position: relative;
+     top: 60px;
+     font-size: 3rem;
+     font-weight: 600;
+     font-style: italic;
+    line-height: 2.5;
+ }
+
+ h4 {
+     text-align: center;
+     position: relative;
+     top: 60px;
+     font-size: 2rem;
+     font-weight: 600;
+     font-style: italic;
+ }
+
+  h6 {
+      text-align: center;
+      position: relative;
+      top: 60px;
+      font-size: 1rem;
+      font-weight: 600;
+      font-style: italic;
+  }
+
+.animate {
+    color: rgb(255, 249, 180);
+    animation: welcome 2s ease-in-out forwards;
+    animation-delay: 3s;
+}
+
+@keyframes welcome {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.button {
+    position: relative;
+    left: 46%;
+    top: 100px;
+    padding: 12px 24px;
+    background-color: #d1c973;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 1.5s ease, background-color 1.5s ease, transform 1.5s ease;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.button:hover {
+    opacity: 0.8;
+    background-color: #b2b840;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+hr {
+    position: relative;
+    top: 590px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+footer {
+    position: absolute;
+    top: 118%;
+    display: inline-block;
+}
+
+.info {
+    color: white;
+    font-family: monospace;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+.copyright {
+    color: white;
+    text-align: right;
+    font-family: monospace;
+    font-size: 1.5rem;
+    position: absolute;
+    white-space: nowrap;
+    left: 315%;
+    bottom: 28%;
+    margin-right: 0px;
+    padding-right: 0px;
+}

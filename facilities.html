@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/cssfile.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="carousel.css" />
+    <script src="script.js"></script>
+    <script src="carousel.js"></script>
+    <title>Faculty</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/banner.png" alt="banner" class="imagebanner" />
+    </header>
+    <nav>
+      <a class="active" href="welcome.html" target="_self">Home</a>
+      <a href="index.html" target="_self">History</a>
+      <a href="#" target="_self">Facilities</a>
+      <a href="tracks.html" target="_self">Tracks Offered</a>
+      <a href="faculty.html" target="_self">Faculty</a>
+      <a href="depedvisionn.html" target="_self"
+        >Mission, Vision, Core Values</a
+      >
+    </nav>
+    <h1 id="facilities-h-one">FACILITIES</h1>
+    <section class="carousel-container">
+      <div class="image-carousel">
+        <img src="" alt="" class="carousel-image" />
+        <div class="carousel-caption">
+          <div class="image-name"></div>
+          <div class="image-counter"></div>
+        </div>
+      </div>
+    </section>
+    <hr id="footerrhr" />
+    <footer id="facultyfooter">
+      <p id="mainfont" class="inffo">
+        COMPUTER PROGRAMMING 11-A BATCH 2023
+        <br />
+        NORTH FAIRVIEW HIGH SCHOOL
+        <br />
+        Auburn St., North Fairview Subd., Quezon City
+        <br />
+        Tel No: 935-3846/ 418-7621
+      </p>
+      <!-- <p id="visionmissioonn" class="copyright">
+            &#169; VINCE GIO N. ACEDILLO
+            <br>
+            CP 11-A
+        </p> -->
+    </footer>
+
+    <body onload="showLoadingScreen()">
+      <div
+        id="loadingScreen"
+        style="
+          background-color: #000;
+          width: 100%;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+          display: none;
+        "
+      >
+        <img
+          src="images/school.png"
+          alt="your-image-description"
+          style="filter: blur(5px); width: 100%"
+        />
+        <div
+          id="loadingCircle"
+          style="
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 7px solid #fff;
+            border-top-color: #ebd065;
+            position: absolute;
+          "
+        ></div>
+      </div>
+      <img id="facilitiesimage" src="images/footer.png" alt="Footer Image" />
+    </body>
+  </body>
+</html>

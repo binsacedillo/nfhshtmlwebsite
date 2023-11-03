@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(to left, #cb9c0d, #cdc156);;
+    color: white;
+}
+
+button {
+    background-color: rgb(255, 255, 208);
+    color: black;
+    position: relative;
+    left: 47%;
+    padding: 10px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: rgb(202, 202, 131);
+    color: white;
+    cursor: pointer;
+}
+
+header h1, p{
+    text-align: center;
+}
+
+.eichwan {
+    font-family: monospace;
+    letter-spacing: 2px;
+    font-size: 3rem;
+}

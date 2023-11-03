@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .carousel {
+    position: relative;
+    display: inline-block;
+  }
+  .slides {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+  .slide {
+    display: none;
+    width: 100%;
+  }
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  .counter-info {
+    text-align: center;
+    font-weight: bold;
+  }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="carousel">
+        <div class="slides">
+            <div class="slide" data-name="Image 1">
+                <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/05/23/16848632618848.jpg"
+                    alt="Image 1">
+            </div>
+            <div class="slide" data-name="Image 2">
+                <img src="https://pbs.twimg.com/media/FfSThLeVsA0bhFa.jpg:large" alt="Image 2">
+            </div>
+            <div class="slide" data-name="Image 3">
+                <img src="https://cdn.vox-cdn.com/thumbor/kmw0zjY8bRl-485XEKql04QAgfs=/0x0:4290x2860/1200x675/filters:focal(2549x61:3235x747)/cdn.vox-cdn.com/uploads/chorus_image/image/72323132/1451227020.0.jpg"
+                    alt="Image 3">
+            </div>
+        </div>
+        <div class="counter-info">
+            <span class="current">1</span>/<span class="total"></span> - <span class="name-caption"></span>
+        </div>
+    </div>
+</body>
+<script>
+    function initCarousel(carousel) {
+            const slides = carousel.querySelectorAll('.slide');
+            const counterCurrent = carousel.querySelector('.current');
+            const counterTotal = carousel.querySelector('.total');
+            const nameCaption = carousel.querySelector('.name-caption');
+
+            let index = 0;
+
+            function showSlide() {
+                slides.forEach(slide => slide.style.display = 'none');
+                slides[index].style.display = 'block';
+                counterCurrent.textContent = index + 1;
+                nameCaption.textContent = slides[index].dataset.name;
+            }
+
+            function changeSlide(step) {
+                index = (index + step + slides.length) % slides.length;
+                showSlide();
+            }
+
+            function autoSlide() {
+                changeSlide(1);
+                setTimeout(autoSlide, 5000); // Change the time interval in milliseconds
+            }
+
+            counterTotal.textContent = slides.length;
+            showSlide();
+            autoSlide();
+        }
+
+        document.querySelectorAll('.carousel').forEach(initCarousel);
+</script>
+</html>

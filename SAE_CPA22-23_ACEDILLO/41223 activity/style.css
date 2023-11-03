@@ -1,0 +1,57 @@
+div {
+    font-family: monospace;
+    width: 100px;
+    height: 100px;
+    background: gold;
+    transition: width 1s;
+}
+        
+#div1 {
+    position: relative;
+    top: 20%;
+    left: 20%;
+    font-size: 2rem;
+    transition-timing-function: linear;
+    background-color: darksalmon;
+}
+        
+#div2 {
+    position: relative;
+    top: 20%;
+    left: 20%;
+    font-size: 2rem;
+    transition-timing-function: ease;
+    background-color: forestgreen;
+}
+        
+#div3 {
+    position: relative;
+    top: 20%;
+    left: 20%;
+    font-size: 2rem;
+    transition-timing-function: ease-in;
+    background-color: firebrick;
+}
+        
+#div4 {
+    position: relative;
+    top: 20%;
+    left: 20%;
+    font-size: 2rem;
+    transition-timing-function: ease-out;
+    background-color: blueviolet;
+}
+        
+#div5 {
+    position: relative;
+    top: 20%;
+    left: 20%;
+    font-size: 2rem;
+    transition-timing-function: ease-in-out;
+    background-color: aqua;
+}
+        
+div:hover {
+    width: 60%;
+    height: 100px;
+}
